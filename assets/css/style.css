@@ -140,11 +140,11 @@ h2.bnr-sub-heading{
 .tbl-section .container{
     display: flex;
 }
-.col-lg-8{
-    width: 66.66%;
+.col-lg-9{
+    width: 75%;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 40px 20px 40px 40px;
 }
 h1{
     font-size: 23px;
@@ -175,11 +175,11 @@ th {
 td {
     background-color: #fff2f2;
 }
-.col-lg-4{
-    width: 33.33%;
+.col-lg-3{
+    width: 25%;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 40px 40px 40px 20px;
 }
 .sidebar {
     display: flex;
@@ -187,22 +187,23 @@ td {
     flex-wrap: wrap;
 }
 a.side-btn {
-    padding: 21px;
+    padding: 15px;
     text-align: center;
     font-family: var(--main-font);
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 900;
     margin: 4px 11px;
     border: 1.5px solid #000;
-    border-radius: 28px;
+    border-radius: 26px;
     text-decoration: none;
     background-color: rgb(255 242 242);
     color: #000;
+    -webkit-transition: all .3s ease-in-out 0s;
 }
 a.side-btn:hover {
     background-color: var(--main-bg-color);
     color: #fff;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 .text-center{
     text-align: center;
@@ -238,23 +239,19 @@ footer.footer-bottom{
     background: rgb(239 241 245 / 20%);
     color: #fff;
     border-radius: 50%;
-    transition:0.5s;
+    -webkit-transition: all .2s ease-in-out 0s;
 }
 .fa-facebook:hover {
     background: #4267B2;
-    transition:0.4s;
 }
 .fa-instagram:hover {
     background: #CD486B;
-    transition:0.4s;
 }
 .fa-twitter:hover {
     background: #1DA1F2;
-    transition:0.4s;
 }
 .fa-linkedin:hover {
     background: #0077b5;
-    transition:0.4s;
 }
 .mb-show{
     display: none;
