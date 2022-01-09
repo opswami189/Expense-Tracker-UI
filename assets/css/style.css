@@ -136,6 +136,7 @@ h2.bnr-sub-heading{
 }
 .tbl-section{
     position: relative;
+    padding: 40px;
 }
 .tbl-section .container{
     display: flex;
@@ -144,7 +145,7 @@ h2.bnr-sub-heading{
     width: 75%;
     display: flex;
     flex-direction: column;
-    padding: 40px 20px 40px 40px;
+    padding-right: 20px;
 }
 h1{
     font-size: 23px;
@@ -164,12 +165,12 @@ h1{
     font-family: var(--main-font);
     font-size: 15px;
     text-align: center;
-    border: 1px solid #2874f0;
+    /* border: 1px solid #2874f0; */
 }
 thead th {
     background-color: #2874f0;
     color: #fff;
-    padding: 5px;
+    padding: 7px;
 }
 thead th:nth-child(1) {
     width: 15%;
@@ -178,16 +179,19 @@ thead th:nth-child(1) {
     width: 7%;
 }
 tbody tr td{
-    padding: 4px;
+    padding: 7px;
 }
-tbody tr:nth-child(odd) {
+tbody tr {
     background-color: #fff2f2;
-  }
+ }
+tbody tr:nth-child(even) {
+    background-color: rgb(255, 242, 242,0.4);
+}
 .col-lg-3{
-    width: 25%;
+    width: 22%;
     display: flex;
     flex-direction: column;
-    padding: 40px 40px 40px 20px;
+    padding-left: 20px;
 }
 .sidebar {
     display: flex;
@@ -265,7 +269,34 @@ footer.footer-bottom{
     display: none;
 }
 
+@media (max-width:991px) {
+    .tbl-section {
+        padding: 30px;
+    }
+    .tbl-section .container {
+        flex-direction: column-reverse;
+    }
+    .col-lg-3,.col-lg-9 {
+        width: auto;
+        padding: 0;
+    }
+    .sidebar {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+    a.side-btn {
+        width: 100%;
+        min-width: 150px;
+        border: unset;
+    }
+}
+
 @media (max-width:768px) {
+    .tbl-section {
+        padding: 17px;
+    }
     header.header-top{
         height: 50px;
     }
@@ -292,14 +323,6 @@ footer.footer-bottom{
     section.bnr-section {
         top: 50px;
         margin-bottom: 50px;
-    }
-    .tbl-section .container{
-        display: flex;
-        flex-direction: column;
-    }
-    .col-lg-4,.col-lg-8{
-        width: 90%;
-        margin: auto;
     }
     .mb-show{
         display: block;
