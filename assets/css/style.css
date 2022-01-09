@@ -278,7 +278,7 @@ footer.footer-bottom{
     }
     .col-lg-3,.col-lg-9 {
         width: auto;
-        padding: 0;
+        padding: 0 0 20px 0;
     }
     .sidebar {
         display: flex;
@@ -288,8 +288,10 @@ footer.footer-bottom{
     }
     a.side-btn {
         width: 100%;
-        min-width: 150px;
+        min-width: 136px;
         border: unset;
+        font-size: 14px;
+        padding: 14px;
     }
 }
 
