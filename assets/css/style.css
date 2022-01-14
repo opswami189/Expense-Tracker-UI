@@ -15,6 +15,9 @@ header.header-top{
     width: 100%;
     z-index: 4;
 }
+logo {
+    transition: all 0.2s ease-in-out;
+}
 .logo-text{
     color: #fff;
     font-family: var(--main-font);
@@ -41,6 +44,7 @@ nav.header-nav ul li a{
 nav.header-nav ul li{
     list-style: none;
     margin: 0 19px;
+    transition: all 0.2s ease-in-out;
 }
 .my-account{
     font-family: var(--main-font);
@@ -54,11 +58,11 @@ nav.header-nav ul li{
     border: none;
     color: #fff;
     background-color: var(--main-bg-color);
+    transition: all 0.2s ease-in-out;
 }
 logo:hover,nav.header-nav ul li:hover, .btn-login:hover{
     transform: scale(1.1);
     opacity: 0.8;
-    transition: 0.3s;
 }
 
 .overlay {
@@ -210,12 +214,11 @@ a.side-btn {
     text-decoration: none;
     background-color: rgb(255 242 242);
     color: #000;
-    -webkit-transition: all .3s ease-in-out 0s;
+    transition: all .2s ease-in-out;
 }
 a.side-btn:hover {
     background-color: var(--main-bg-color);
     color: #fff;
-    transition: 0.3s;
 }
 .text-center{
     text-align: center;
@@ -241,8 +244,8 @@ footer.footer-bottom{
 }
 .fa {
     padding: 9px;
-    font-size: 23px;
-    width: 23px;
+    font-size: 21px;
+    width: 21px;
     text-align: center;
     text-decoration: none;
     margin: 7px;
@@ -251,7 +254,7 @@ footer.footer-bottom{
     background: rgb(239 241 245 / 20%);
     color: #fff;
     border-radius: 50%;
-    -webkit-transition: all .2s ease-in-out 0s;
+    transition: all .2s ease-in-out;
 }
 .fa-facebook:hover {
     background: #4267B2;
